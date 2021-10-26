@@ -1,0 +1,326 @@
+* {margin: 0;
+	padding: 0;
+	box-sizing: border-box;}
+	/*Styling navbar for bootstrap*/
+
+
+
+
+
+
+/*This is the navbar*/
+.fixed-top {background-color: #000;
+  position: sticky;
+  width: 100%;
+  top: 0;
+	z-index: 1;
+}
+/* #check {display: none;}
+
+@media (max-width: 1250px) { .fixed-top {padding: 0 2%;
+}
+	.navbar {padding: 15px 20px;}
+}
+
+.check-btn {width: 20px;
+	height: 18px;
+	float: right;
+	position: relative;
+	transform: rotate(0);
+	transition: 0.5s ease-in-out;
+	cursor: pointer;
+	top: 25px;
+	display: none;
+}
+
+.check-btn span {background-color: #fff;
+	display: block;
+	position: absolute;
+	height: 2px;
+	width: 100%;
+	border-radius: 1px;
+	opacity: 1;
+	left: 0;
+	transform: rotate(0);
+	transition: 0.25s ease-in-out;
+}
+
+.check-btn span:nth-child(1) {top: 0;}
+.check-btn span:nth-child(2) {top: 7px;}
+.check-btn span:nth-child(3) {top: 14px;}
+
+@media (max-width: 992px) { .fixed-top {padding: 0 10%;
+}
+	.check-btn {display: block;
+		margin-right: 40px;
+	}
+	.navbar {position: fixed;
+		width: 350px;
+		height: 100vh;
+		background-color: #000;
+		top: 68px;
+		left: -100%;
+		text-align: center;
+		transition: all 0.5s;
+	}
+	.navbar li {display: inline-block;
+		margin: 50px 0;}
+	#check:chacked ~ .navbar {left: 0;}
+}
+
+@media (max-width: 560px) { .navbar {display: block;
+		width: 100%;
+	}
+} */
+
+#check {display: none;}
+
+nav img {cursor: pointer;}
+
+nav ul {width: auto;
+float: right;
+margin: 0;}
+
+nav ul li {display: inline-block;
+padding: 15px 25px;}
+
+nav ul li a {text-align: center;
+color: #ffffff;
+font-size: 20px;
+text-decoration: none;}
+
+nav ul li a:hover {color: lightgrey;
+  border-bottom: 3px solid red;}
+
+@media (max-width: 1250px) {
+	.nav-bar {padding: 0 50px;
+  }
+  nav ul li{padding: 10px 20px;}
+}
+
+.check-btn {width: 20px;
+	height: 18px;
+	float: right;
+	position: relative;
+	cursor: pointer;
+	top: 35px;
+	display: none;
+}
+
+.check-btn span {background-color: #eee;
+	display: block;
+	position: absolute;
+	height: 2px;
+	width: 100%;
+	opacity: 1;
+	left: 0;
+	transition: 0.25s ease-in-out;}
+
+.check-btn:hover span {background-color: red;}
+
+.check-btn span:nth-child(1) {top: 0;}
+.check-btn span:nth-child(2) {top: 7px;}
+.check-btn span:nth-child(3) {top: 14px;}
+
+@media (max-width: 860px) { .nav-bar {padding: 0 50px;
+	}
+	.check-btn {display: block;
+		margin-right: 40px;
+	}
+	nav ul {position: fixed;
+		width: 365px;
+		height: 252px;
+		background-color: #000;
+		top: 72px;
+		left: -100%;
+		text-align: center;
+		transition: all 0.5s;
+		box-shadow: 0 0 30px rgba(0,0,0,0.3);
+	}
+	nav ul li {display: block;
+		margin: 10px 0;
+		line-height: 30px;
+	}
+	#check:checked ~ ul {left: 0;}
+}
+
+/*This is the about section*/
+
+.about-container {width: 100%;
+	min-height: 100vh;
+}
+
+.heading-title {width: 100%;
+	display: flex;
+	text-align: center;
+	justify-content: center;
+	font-size: 22px;
+	color: #999;
+	letter-spacing: 1.2px;
+	padding: 50px 0;
+}
+
+.heading-title h1::after {content: '';
+	height: 6px;
+	width: 180px;
+	background-color: #000;
+	border-radius: 6px;
+	position: relative;
+	display: block;
+	margin: auto;}
+
+.boxes {width: 95%;
+	display: grid;
+	grid-template-columns: repeat(2,1fr);
+	grid-gap: 28px;
+	margin: 20px auto;
+}
+
+.para-group {box-shadow: 0 0 2px 0 rgba(0,0,0,0.5);
+	padding: 20px;
+	background: rgba(0,0,0,0.2);
+}
+
+.para-group1 p {line-height: 1.5;
+	padding: 5px 20px;}
+
+.para-group2 p {line-height: 1.5;
+	padding: 5px 20px;}
+
+.para-group3 p {line-height: 1.5;
+	padding: 5px 20px;}
+
+.para-group1:hover {transform:scale(1.1) translateX(50px);
+	background-color: #fd2929ba;
+	transition: 1s ease-out;
+	color: #eee;
+	padding: 20px;}
+
+.para-group2:hover {transform:scale(1.1) translateX(-50px);
+	background-color: #fd2929ba;
+	transition: 1s ease-out;
+	color: #eee;
+	padding: 20px;}
+
+.para-group3:hover {transform:scale(1.1) translateX(50px);
+	background-color: #fd2929ba;
+	transition: 1s ease-out;
+	color: #eee;
+	padding: 20px;}
+
+.image-section {width: 100%;
+	margin: auto;
+}
+
+.image-section img {width: 100%;
+	height: auto;
+}
+
+@media screen and (max-width: 860px) {
+	.boxes {grid-template-columns: repeat(1,1fr);
+	}
+	.para-group {text-align: center;}
+	.para-group1:hover, .para-group2:hover, .para-group3:hover {transform:scale(1.0) translateY(-40px);}
+}
+
+/*This is the about cards*/
+.text {text-align: center;
+	background-color: #fff;
+ 	margin-top: 20px;
+ 	color: #000;}
+
+.rows {width: 80%;
+	margin: auto;
+	margin-top: 40px;
+	margin-bottom: 40px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;}
+
+@media(max-width: 768px) {
+	.rows {width: 100%;
+	}
+}
+
+.card {
+	width: 230px;
+    height: 270px;
+	margin: 5px 10px 50px 10px;
+	background: rgba(0,0,0,0.8);
+	text-align: center;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8);
+  	transition: 1s;
+	border-radius: 30px;}
+
+.card:hover {transform:scale(1.1) translateY(-30px);
+	background-color: #eee;
+	transition: 1s ease-out;
+	color: solid black;}
+
+.card:hover .head3 {color: #000;
+	transition: 1s;}
+
+.card:hover .title {color: #222;
+	transition: 1s;}
+
+ .card img {border-radius: 50%;
+ 	width: 100px;
+ 	height: 100px;
+ 	margin: 40px;}
+
+.title {color: #fff;}
+
+.head3 {color: #eee;}
+h2 {text-align: center;
+  	margin: 20px;}
+
+.card .fa {text-decoration: none;
+  color: #fff;
+  border-radius: 50px;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  line-height: 20px;}
+
+
+   /*This is the footer*/
+footer {color: #cccc;
+	background-color: #000;
+	bottom: 0;}
+
+.foot_container {display: flex;
+ 	flex-direction: column;
+ 	align-items: center;
+ 	padding: 30px;}
+
+.info {text-align: center;
+	margin-bottom: 20px;}
+
+.info p a {text-decoration: none;
+  color: #cccc;}
+
+.info p a:hover {color: red;}
+
+.flex-row {margin: 0 25px;
+	display: flex;}
+
+.flex-row li {padding: 0 15px;
+	display: flex;}
+
+.flex-row li .fa {text-decoration: none;
+  color: #ccc;
+  border-radius: 50px;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  line-height: 20px;}
+
+.flex-row li .fa:hover {color: #eee;}
+
+.fa-facebook:hover {background-color: #3b5998;}
+.fa-twitter:hover {background-color: #00acee;}
+.fa-linkedin:hover {background-color: #0077B5;}
+
+#copyright {padding: 20px 0 0 0;}
