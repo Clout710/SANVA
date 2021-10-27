@@ -60,7 +60,7 @@
       
        
       
-      @media (max-width: 1250px) {
+      @media (max-width: 860px) {
           .nav-bar {padding: 0 50px;
         }
         nav ul li{padding: 10px 20px;}
@@ -816,7 +816,11 @@ hr {
   }
 }
 
-@media screen and (max-width: 569px) {
+@media screen and (max-width: 480px) {
+  #contact{
+    float: none ;
+    margin: auto;
+  }
 
   .direct-contact-container, .form-wrapper {
     float: none;
@@ -837,7 +841,7 @@ hr {
     max-width: 280px;
   }  
   .social-media-list {
-    left: -31pz;
+    left: -31px;
   }
   .social-media-list li {
     height: 55px;
