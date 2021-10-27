@@ -8,10 +8,13 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!-- for javascript -->
+        <link rel="stylesheet" href="main.js">
         <!--bootstrap for Contact bar-->
         <meta name="description" content="Responsive contact form using bootstrap,">
         <meta name="keywords" content="HTML,CSS,XML,JavaScript,bootstrap,responsive,form,contact form,dd,dl,dt">
         <meta name="author" content="Nasir Khan">
+
           <!-- for new navbar -->
     <meta http-equiv="X-UA-Compitable" content="IE=edge">
         <title>Responsive Contact Form</title>
@@ -47,60 +50,76 @@
   </header>
   
   <body>
-    <section id="contact-form">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12 text-center">
-<!--             project title area start -->
-            <div class="title-area text-light">
-              <h1 class="font-primary">Get in Touch With Us</h1>
-            </div>
-<!--             project title area end -->
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-sm-12 col-md-12 col-lg-8 offset-lg-2">
-            <div class="form-area mt-5 p-lg-4 p-3">
-<!--               main form start -->
-              <form>
-                <div class="row">
-                  <div class="col-sm-12 text-center text-light mb-3 font-secondary">
-                    <h3>-)- SUPPORT -(-</h3>
-                  </div>
-                </div>
-                <dl class="row">
-                  <dt class="col-sm-4 text-light font-secondary">Fullname*</dt>
-                  <dd class="col-sm-8"><input type="text" class="form-control" placeholder="John Doe" required></dd>
+    <!-- new form -->
 
-                  <dt class="col-sm-4 text-light font-secondary">Email*</dt>
-                  <dd class="col-sm-8">
-                    <input type="Email" class="form-control text-info" placeholder="(Optional)">
-                  </dd>
 
-                  <dt class="col-sm-4 text-light font-secondary">Cell/Tell*</dt>
-                  <dd class="col-sm-8"><input type="text" class="form-control" placeholder="xxx-xxx-xxxx"></dd>
 
-                <dt class="col-sm-4 text-truncate text-light font-secondary">Info*</dt>
-                  <dd class="col-sm-8"><input type="text" class="form-control" placeholder="Write message here"></dd>
-                </dl>
-                <div class="row">
-                  <div class="col-sm-12">
-                     <a class="button" href="#popup1">submit</a>
-                  </div>
-                  <div id="popup1" class="overlay">
-                    <div class="popup">
-                      <h2>Thank you</h2>
-                      <a class="close" href="Contacts.html">&times;</a>
-                      <div class="content"> for submitting you will hear from us shortly
-                </div>
-              </form>
-<!--               main form end -->
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+    <section id="contact">
   
+      <div class="contact-wrapper">
+      
+      <!-- Left contact page --> 
+        
+        <form id="contact-form" class="form-horizontal" role="form">
+           
+          <div class="form-group">
+            <div class="col-sm-12">
+              <input type="text" class="form-control" id="name" placeholder="NAME" name="name" value="" required>
+            </div>
+          </div>
+    
+          <div class="form-group">
+            <div class="col-sm-12">
+              <input type="email" class="form-control" id="email" placeholder="EMAIL" name="email" value="" required>
+            </div>
+          </div>
+    
+          <textarea class="form-control" rows="10" placeholder="MESSAGE" name="message" required></textarea>
+          
+          <button class="btn btn-primary send-button" id="submit" type="submit" value="SEND">
+            <div class="alt-send-button">
+              <i class="fa fa-paper-plane"></i><span class="send-text">SEND</span>
+            </div>
+          
+          </button>
+          
+        </form>
+        
+      <!-- Left contact page --> 
+        
+          <div class="direct-contact-container">
+    
+            <ul class="contact-list">
+              <li class="list-item"><i class="fa fa-map-marker fa-2x"><span class="contact-text place">66 - 68 Albert Road, Woodstock,<br>Cape Town, 7925</span></i></li>
+              
+              <li class="list-item"><i class="fa fa-phone fa-2x"><span class="contact-text phone"><a href="tel:1-212-555-5555" title="Give me a call">0800-sanva</a></span></i></li>
+              
+              <li class="list-item"><i class="fa fa-envelope fa-2x"><span class="contact-text gmail"><a href="mailto:#" title="Send me an email"> vaccine@sanva.gov.za</a></span></i></li>
+              
+            </ul>
+    
+            
+            <ul class="social-media-list">
+              <hr>
+              <li><a href="#" target="_blank" class="contact-icon">
+                <i class="fa fa-twitter" aria-hidden="true"></i></a>
+              </li>
+              <li><a href="#" target="_blank" class="contact-icon">
+                <i class="fa fa-linkedin" aria-hidden="true"></i></a>
+              </li>
+              <li><a href="#" target="_blank" class="contact-icon">
+                <i class="fa fa-facebook" aria-hidden="true"></i></a>
+              </li>  
+                
+            </ul>
+            
+          </div>
+        
+      </div>
+      
+    </section>  
+   
+    
 
     <footer>
       <div class="foot_container">
