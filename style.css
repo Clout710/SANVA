@@ -898,19 +898,34 @@ textarea {
   color: #000;
 }
 
-.copyright {
-  font: 200 14px 'Oswald', sans-serif;
-  color: #555;
-  letter-spacing: 1px;
+/* validation form inputs for contacts */
+
+input.valid{
+  border-color: #06D85F; 
+}
+
+input.invalid{
+  border-color: #ec2027;
+}
+input + p{
+  font-size: 0.9em;
+  font-weight: bold;
   text-align: center;
+  color: #977a7b;
+   opacity: 0;
+   margin: 0px 10px;
+   height: 0;
 }
 
-hr {
-  border-color: rgba(255,255,255,.6);
-  background: antiquewhite;
-  inline-size: 300px;
-
+input.invalid + p{
+  opacity: 1;
+  height: auto;
+  margin: 20px;
 }
+
+
+
+
 
 /* Begin Media Queries*/
 @media screen and (max-width: 860px) {

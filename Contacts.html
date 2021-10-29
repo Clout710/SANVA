@@ -93,11 +93,16 @@
               <!-- <h1>Get in touch</h1> -->
         
               <input type="text" name="firstname" id="firstname" placeholder="First name" required />
+              <p>First name must be alphanumeric & 5-30 charaters </p>
+
               <input type="text" name="surname" id="surname" placeholder="Surname" required />
+              <p>Surname must be alphanumeric & 5-20 charaters </p>
+
               <input type="number" name="phone" id="phone" placeholder="Phone" required>
-        
-              <input type="text" name="email" id="email" placeholder="E-mail address" required />
-        
+              <p>Number must be a valid SA phone number (10 digits)</p>
+
+              <input type="text" name="email" id="email" placeholder="E-mail address"/>
+              <p>Email must be a valid address, eg vacine@sanva.com</p>
               <textarea name="message" id="message" placeholder="Message" required ></textarea>
         
               <input type="submit" id="submit-btn" value="Send" />
@@ -194,7 +199,8 @@
         
       <!-- </div> -->
       
-    </section>  
+    </section> 
+    <script type="text/javascript" src="main.js"></script>  
    
     
 
