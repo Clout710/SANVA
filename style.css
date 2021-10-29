@@ -651,25 +651,23 @@ option {
   background: transparent;
   border-bottom: 2px solid #FFF;
   color: #FFF;
+  outline: none;
 }
 
 input#firstname {
   width: 100%;
   max-width: 460px;
-  float: left;
   margin: 20px;
 }
 
 input#surname {
   width: 100%;
   max-width: 460px;
-  float: left;
   margin: 20px;
 }
 input#phone{
   width: 100%;
   max-width: 460px;
-  float: left;
   margin: 20px
 }
 
@@ -905,13 +903,13 @@ input.valid{
 }
 
 input.invalid{
-  border-color: #ec2027;
+  border-color: #df0c13;
 }
 input + p{
   font-size: 0.9em;
   font-weight: bold;
-  text-align: center;
-  color: #977a7b;
+  text-align: left;
+  color: #df0c13;
    opacity: 0;
    margin: 0px 10px;
    height: 0;
@@ -921,6 +919,9 @@ input.invalid + p{
   opacity: 1;
   height: auto;
   margin: 20px;
+}
+.formsg{
+  left: 100px;
 }
 
 
