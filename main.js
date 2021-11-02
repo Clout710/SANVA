@@ -6,7 +6,7 @@ const inputs= document.querySelectorAll("input");
     phone:/^\d{10}$/,
     firstname:/^[a-z]{3,30}$/i,
     surname :/^[a-z]{3,20}$/i,
-    email: /^([a-z\d\.-]+)@([a-z\d-]+)\.([a-z]{2,9})(\.[a-z]{2,9})?$/,
+    email: /^([a-z\d\.-_]+)@([a-z\d-]+)\.([a-z]{2,9})(\.[a-z]{2,9})?$/,
     message: /^[a-zA-Z-,]+(\s{0,1}[a-zA-Z-,])$/,
     
  };

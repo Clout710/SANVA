@@ -1,6 +1,7 @@
 * {margin: 0;
 	padding: 0;
-	box-sizing: border-box;}
+	box-sizing: border-box;
+	}
 	/*Styling navbar for bootstrap*/
 
 
@@ -284,7 +285,7 @@ h2 {text-align: center;
   text-align: center;
   line-height: 20px;}
 
-
+@import url('https://fonts.googleapis.com/css?family=Kaushan+Script|Saira&display=swap');
    /*This is the footer*/
 footer {color: #cccc;
 	background-color: #000;
@@ -296,6 +297,7 @@ footer {color: #cccc;
  	padding: 30px;}
 
 .info {text-align: center;
+	font-family: trebuchet ms;
 	margin-bottom: 20px;}
 
 .info p a {text-decoration: none;

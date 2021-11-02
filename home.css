@@ -6,7 +6,7 @@
     }
     
     /*Navbar*/
-    .fixed-top {background-color: black;
+    /* .fixed-top {background-color: black;
       position: sticky;
       width: 100%;
       top: 0;
@@ -25,8 +25,8 @@
     
     .navbar li a:hover {color: lightgrey;
       border-bottom: 0.5px solid red;
-      padding-top : 10px;
-    }
+      padding-top : 10px;} */
+    
       
     
       /*This is the footer*/
@@ -110,7 +110,7 @@
       
       
       /* this is styling for the navigation */
-      .fixed-top {background-color: black;
+      /* .fixed-top {background-color: black;
         position: fixed;
         width: 100%;
         top: 0;}
@@ -184,7 +184,122 @@
         .Aligner-item {
           width: 90%;
         }
+      } */
+
+
+
+      .fixed-top {background-color: #000;
+        position: fixed;
+        width: 100%;
+        top: 0;
+          z-index: 1;
       }
+      
+       
+      
+      #check {display: none;}
+      
+       
+      
+      nav img {cursor: pointer;}
+      
+       
+      
+      nav ul {width: auto;
+      float: right;
+      margin: 0;}
+      
+       
+      
+      nav ul li {display: inline-block;
+      padding: 15px 25px;}
+      
+       
+      
+      nav ul li a {text-align: center;
+      color: #ffffff;
+      font-size: 20px;
+      text-decoration:none;
+      font-family: 'FontAwesome';
+    }
+      
+       
+      
+      nav ul li a:hover {color: lightgrey;
+        border-bottom: 3px solid red;
+        text-decoration-line: none;
+    }
+      
+       
+      
+      @media (max-width: 860px) {
+          .nav-bar {padding: 0 50px;
+        }
+        nav ul li{padding: 10px 20px;}
+      }
+      
+       
+      
+      .check-btn {width: 20px;
+          height: 18px;
+          float: right;
+          position: relative;
+          cursor: pointer;
+          top: 35px;
+          display: none;
+      }
+      
+       
+      
+      .check-btn span {background-color: #eee;
+          display: block;
+          position: absolute;
+          height: 2px;
+          width: 100%;
+          opacity: 1;
+          left: 0;
+          transition: 0.25s ease-in-out;}
+      
+       
+      
+      .check-btn:hover span {background-color: red;}
+      
+       
+      
+      .check-btn span:nth-child(1) {top: 0;}
+      .check-btn span:nth-child(2) {top: 7px;}
+      .check-btn span:nth-child(3) {top: 14px;}
+      
+       
+      
+      @media (max-width: 860px) { .nav-bar {padding: 0 50px;
+          }
+          .check-btn {display: block;
+              margin-right: 40px;
+          }
+          nav ul {position: fixed;
+              width: 365px;
+              height: 252px;
+              background-color: #000;
+              top: 72px;
+              left: -100%;
+              text-align: center;
+              transition: all 0.5s;
+              box-shadow: 0 0 30px rgba(0,0,0,0.3);
+          }
+          nav ul li {display: block;
+              margin: 10px 0;
+              line-height: 30px;
+          }
+          #check:checked ~ ul {left: 0;
+            top: 66px;}
+      }
+
+    @media (max-width: 780px){
+        
+        .btnWidth {
+            width: 53px;}
+        }
       
       
       
