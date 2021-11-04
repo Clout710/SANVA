@@ -1,19 +1,23 @@
+@import url('https://fonts.googleapis.com/css?family=Kaushan+Script|Saira&display=swap');
 * {margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+	/* font-family: 'Roboto'; */
+	font-weight: 500;
+	letter-spacing: 0.21px;
 	}
 	/*Styling navbar for bootstrap*/
 
-
+body  {font-family: trebuchet ms;}
 
 
 
 
 /*This is the navbar*/
 .fixed-top {background-color: #000;
-  position: sticky;
-  width: 100%;
-  top: 0;
+	position: sticky;
+	width: 100%;
+	top: 0;
 	z-index: 1;
 }
 /* #check {display: none;}
@@ -83,9 +87,10 @@ float: right;
 margin: 0;}
 
 nav ul li {display: inline-block;
-padding: 15px 25px;}
+padding: 19px 24.6px;}
 
 nav ul li a {text-align: center;
+	font-family: 'FontAwesome';
 color: #ffffff;
 font-size: 20px;
 text-decoration: none;}
@@ -145,6 +150,11 @@ nav ul li a:hover {color: lightgrey;
 	#check:checked ~ ul {left: 0;}
 }
 
+
+
+/*Nav style from style*/
+
+
 /*This is the about section*/
 
 .about-container {width: 100%;
@@ -177,11 +187,6 @@ nav ul li a:hover {color: lightgrey;
 	margin: 20px auto;
 }
 
-.para-group {box-shadow: 0 0 2px 0 rgba(0,0,0,0.5);
-	padding: 20px;
-	background: rgba(0,0,0,0.2);
-}
-
 .para-group1 p {line-height: 1.5;
 	padding: 5px 20px;}
 
@@ -191,7 +196,7 @@ nav ul li a:hover {color: lightgrey;
 .para-group3 p {line-height: 1.5;
 	padding: 5px 20px;}
 
-.para-group1:hover {transform:scale(1.1) translateX(50px);
+.para-group1:hover, .para-group3:hover {transform:scale(1.1) translateX(50px);
 	background-color: #fd2929ba;
 	transition: 1s ease-out;
 	color: #eee;
@@ -203,11 +208,7 @@ nav ul li a:hover {color: lightgrey;
 	color: #eee;
 	padding: 20px;}
 
-.para-group3:hover {transform:scale(1.1) translateX(50px);
-	background-color: #fd2929ba;
-	transition: 1s ease-out;
-	color: #eee;
-	padding: 20px;}
+.para-group3:hover h2, .para-group2:hover h2 {color: #eee;}
 
 .image-section {width: 100%;
 	margin: auto;
@@ -226,9 +227,9 @@ nav ul li a:hover {color: lightgrey;
 
 /*This is the about cards*/
 .text {text-align: center;
-	background-color: #fff;
  	margin-top: 20px;
- 	color: #000;}
+	 font-size: 28px;
+ 	color: #f10;}
 
 .rows {width: 80%;
 	margin: auto;
@@ -253,43 +254,52 @@ nav ul li a:hover {color: lightgrey;
 	text-align: center;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8);
   	transition: 1s;
+	font-size: 18px;
 	border-radius: 30px;}
 
-.card:hover {transform:scale(1.1) translateY(-30px);
+.card-profile:hover {transform:scale(1.1) translateY(-30px);
 	background-color: #eee;
 	transition: 1s ease-out;
-	color: solid black;}
+	color: solid #000;}
 
-.card:hover .head3 {color: #000;
+.card-profile:hover .head3 {color: #222;
 	transition: 1s;}
 
-.card:hover .title {color: #222;
+.card-profile:hover .title {color: #444;
 	transition: 1s;}
 
- .card img {border-radius: 50%;
+ .card-profile img {border-radius: 50%;
  	width: 100px;
  	height: 100px;
  	margin: 40px;}
 
-.title {color: #fff;}
+.titleCard {color: #fff;}
 
 .head3 {color: #eee;}
-h2 {text-align: center;
+.ourTeam {text-align: center;
   	margin: 20px;}
 
-.card .fa {text-decoration: none;
-  color: #fff;
+.card-profile .fa {text-decoration: none;
+  color: #eee;
   border-radius: 50px;
   width: 20px;
   height: 20px;
   text-align: center;
   line-height: 20px;}
 
-@import url('https://fonts.googleapis.com/css?family=Kaushan+Script|Saira&display=swap');
+.card-profile:hover .fa {color: #555;
+	transition: 1s;
+}
+
+.card-profile .fa:hover {color: #eee;}
+
+
    /*This is the footer*/
 footer {color: #cccc;
 	background-color: #000;
-	bottom: 0;}
+	bottom: 0;
+	font-size: 20px;
+}
 
 .foot_container {display: flex;
  	flex-direction: column;
@@ -297,15 +307,17 @@ footer {color: #cccc;
  	padding: 30px;}
 
 .info {text-align: center;
-	font-family: trebuchet ms;
 	margin-bottom: 20px;}
+	
+.info p{
+	margin-bottom: 8px;}
 
 .info p a {text-decoration: none;
   color: #cccc;}
 
 .info p a:hover {color: red;}
 
-.flex-row {margin: 0 25px;
+.flex-row {margin: 0 22px;
 	display: flex;}
 
 .flex-row li {padding: 0 15px;
@@ -314,10 +326,10 @@ footer {color: #cccc;
 .flex-row li .fa {text-decoration: none;
   color: #ccc;
   border-radius: 50px;
-  width: 20px;
-  height: 20px;
+  width: 30px;
+  height: 30px;
   text-align: center;
-  line-height: 20px;}
+  line-height: 30px;}
 
 .flex-row li .fa:hover {color: #eee;}
 
